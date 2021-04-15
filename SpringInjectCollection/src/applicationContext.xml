@@ -1,0 +1,110 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+           
+
+<bean id="item1" class="Item">
+<property name="itemno" value="1"/>
+<property name="name" value="soap"/>
+<property name="price" value="50.0"/>
+</bean>
+
+<bean id="item2" class="Item">
+<property name="itemno" value="2"/>
+<property name="name" value="apple"/>
+<property name="price" value="60.0"/>
+</bean>
+
+<bean id="item3" class="Item">
+<property name="itemno" value="3"/>
+<property name="name" value="orange"/>
+<property name="price" value="80.0"/>
+</bean>
+
+<bean id="item4" class="Item">
+<property name="itemno" value="4"/>
+<property name="name" value="skirt"/>
+<property name="price" value="700.0"/>
+</bean>
+
+<bean id="item5" class="Item">
+<property name="itemno" value="5"/>
+<property name="name" value="car"/>
+<property name="price" value="100.0"/>
+</bean>
+
+<bean id="item6" class="Item">
+<property name="itemno" value="6"/>
+<property name="name" value="van"/>
+<property name="price" value="250.0"/>
+</bean>
+
+<bean id="item7" class="Item">
+<property name="itemno" value="7"/>
+<property name="name" value="bus"/>
+<property name="price" value="500.0"/>
+</bean>
+
+<bean id="item8" class="Item">
+<property name="itemno" value="8"/>
+<property name="name" value="train"/>
+<property name="price" value="600.0"/>
+</bean>
+
+<bean id="item9" class="Item">
+<property name="itemno" value="9"/>
+<property name="name" value="bicycle"/>
+<property name="price" value="300.0"/>
+</bean>
+
+<bean id="item10" class="Item">
+<property name="itemno" value="10"/>
+<property name="name" value="blouse"/>
+<property name="price" value="750.0"/>
+</bean>
+
+
+<bean id="cat1" class="Category">
+<property name="categoryName" value="toys"/>
+<property name="description" value="toylist"/>
+<property name="itemList" >
+<list>
+	<ref bean="item1"/>
+	<ref bean="item2"/>
+	<ref bean="item3"/>
+</list>
+</property>
+</bean>
+    
+<bean id="cat2" class="Category">
+<property name="categoryName" value="dress"/>
+<property name="description" value="dresslist"/>
+<property name="itemList" >
+<list>
+	<ref bean="item4"/>
+	<ref bean="item5"/>
+	<ref bean="item6"/>
+</list>
+</property>
+</bean>  
+
+<bean id="cat3" class="Category">
+<property name="categoryName" value="food"/>
+<property name="description" value="foodlist"/>
+<property name="itemList" >
+<list>
+	<ref bean="item7"/>
+	<ref bean="item8"/>
+	<ref bean="item9"/>
+	<ref bean="item10"/>
+</list>
+</property>
+</bean> 
+    
+    
+</beans>

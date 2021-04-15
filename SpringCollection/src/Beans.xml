@@ -1,0 +1,43 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- Definition for AnimalClass bean -->
+   <bean id="animalClass"  class="com.hcl.AnimalClass" >
+   <property name="animalList">
+     <list>
+      <value>Tiger</value>
+      <value>Lion</value>
+      <value>Cat</value>
+     </list>
+   </property>
+   <property name="animalSet">
+   <set>
+    <value>Lizard</value>
+    <value>Crocodile</value>
+    <value>Snake</value>
+   </set>
+   </property>
+   <property name="animalMap">
+   <map>
+   <entry key="1" value="Tiger" />
+   <entry key="2" value="Lion" />
+   <entry key="3" value="Cat" />  
+   </map>
+   </property>
+   <property name="animalProp">
+   <props>
+    <prop key="1">Tiger</prop>
+    <prop key="2">Lizard</prop>
+    <prop key="3">ELephant</prop>
+   </props>
+   </property>
+  </bean>
+   
+   
+  
+
+</beans>

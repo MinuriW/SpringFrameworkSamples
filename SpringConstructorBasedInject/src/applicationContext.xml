@@ -1,0 +1,109 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+           
+
+<bean id="item1" class="Item">
+<constructor-arg index="0" value="1"></constructor-arg>
+<constructor-arg index="1" value="apple"></constructor-arg>
+<constructor-arg index="2" value="50.0"></constructor-arg>
+</bean>
+   
+<bean id="item2" class="Item">
+<constructor-arg index="0" value="2"></constructor-arg>
+<constructor-arg index="1" value="orange"></constructor-arg>
+<constructor-arg index="2" value="70.0"></constructor-arg>
+</bean>
+
+<bean id="item3" class="Item">
+<constructor-arg index="0" value="3"></constructor-arg>
+<constructor-arg index="1" value="mango"></constructor-arg>
+<constructor-arg index="2" value="100.0"></constructor-arg>
+</bean> 
+
+<bean id="item4" class="Item">
+<constructor-arg index="0" value="4"></constructor-arg>
+<constructor-arg index="1" value="pine apple"></constructor-arg>
+<constructor-arg index="2" value="150.0"></constructor-arg>
+</bean>
+
+<bean id="item5" class="Item">
+<constructor-arg index="0" value="5"></constructor-arg>
+<constructor-arg index="1" value="car"></constructor-arg>
+<constructor-arg index="2" value="100.0"></constructor-arg>
+</bean>
+
+<bean id="item6" class="Item">
+<constructor-arg index="0" value="6"></constructor-arg>
+<constructor-arg index="1" value="bus"></constructor-arg>
+<constructor-arg index="2" value="250.0"></constructor-arg>
+</bean>
+
+<bean id="item7" class="Item">
+<constructor-arg index="0" value="7"></constructor-arg>
+<constructor-arg index="1" value="train"></constructor-arg>
+<constructor-arg index="2" value="500.0"></constructor-arg>
+</bean>
+
+<bean id="item8" class="Item">
+<constructor-arg index="0" value="8"></constructor-arg>
+<constructor-arg index="1" value="skirt"></constructor-arg>
+<constructor-arg index="2" value="450.0"></constructor-arg>
+</bean>
+
+<bean id="item9" class="Item">
+<constructor-arg index="0" value="9"></constructor-arg>
+<constructor-arg index="1" value="blouse"></constructor-arg>
+<constructor-arg index="2" value="500.0"></constructor-arg>
+</bean>
+
+<bean id="item10" class="Item">
+<constructor-arg index="0" value="10"></constructor-arg>
+<constructor-arg index="1" value="short"></constructor-arg>
+<constructor-arg index="2" value="200.0"></constructor-arg>
+</bean>
+
+<bean id="cat1" class="Category">
+<constructor-arg index="0" value="fruits"></constructor-arg>
+<constructor-arg index="1" value="fruit detils"></constructor-arg>
+<constructor-arg index="2" >
+<list>
+	<ref bean="item1"/>
+	<ref bean="item2"/>
+	<ref bean="item3"/>
+	<ref bean="item4"/>
+</list>
+</constructor-arg>
+</bean>
+
+<bean id="cat2" class="Category">
+<constructor-arg index="0" value="toys"></constructor-arg>
+<constructor-arg index="1" value="toy detils"></constructor-arg>
+<constructor-arg index="2" >
+<list>
+	<ref bean="item5"/>
+	<ref bean="item6"/>
+	<ref bean="item7"/>
+</list>
+</constructor-arg>
+</bean>
+
+<bean id="cat3" class="Category">
+<constructor-arg index="0" value="cloths"></constructor-arg>
+<constructor-arg index="1" value="cloth detils"></constructor-arg>
+<constructor-arg index="2" >
+<list>
+	<ref bean="item8"/>
+	<ref bean="item9"/>
+	<ref bean="item10"/>
+	
+</list>
+</constructor-arg>
+</bean>
+    
+</beans>
