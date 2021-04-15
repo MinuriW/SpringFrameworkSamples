@@ -1,0 +1,23 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+   <!-- Definition for Address bean -->
+   <bean id="address"  class="com.hcl.Address" scope="prototype" >
+   <property name="addId" value="1023"/>
+   <property name="city" value="Noida"/>
+   <property name="zip" value="201301"/>
+   </bean>
+   
+   <!-- Definition for Employee bean -->
+   <bean id="employee" class="com.hcl.Employee" autowire="byType">
+   <property name="eno" value="98091" />
+   <property name="name" value="Nidhi Goel" />
+   </bean>
+   
+  
+
+</beans>

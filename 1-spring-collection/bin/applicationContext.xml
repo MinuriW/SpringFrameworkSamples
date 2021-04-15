@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans  
+    xmlns="http://www.springframework.org/schema/beans"  
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+    xmlns:p="http://www.springframework.org/schema/p"  
+    xsi:schemaLocation="http://www.springframework.org/schema/beans  
+               http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+    <bean id="category1" class="Category">  
+        <property name="categoryname" value="categoryname1"/>
+        <property name="description" value="description1"/>
+        <property name="list">
+        	<list>
+        		<ref bean="item1"/>
+        		<ref bean="item2"/>
+        		<ref bean="item3"/>
+        		<ref bean="item4"/>
+        	</list>
+        </property>
+	</bean>
+	<bean id="category2" class="Category">  
+        <property name="categoryname" value="categoryname2"/>
+        <property name="description" value="description2"/>
+        <property name="list">
+        	<list>
+        		<ref bean="item5"/>
+        		<ref bean="item6"/>
+        		<ref bean="item7"/>
+        		<ref bean="item8"/>
+        	</list>
+        </property>
+	</bean>
+	<bean id="category3" class="Category">  
+        <property name="categoryname" value="categoryname3"/>
+        <property name="description" value="description3"/>
+        <property name="list">
+        	<list>
+        		<ref bean="item9"/>
+        		<ref bean="item10"/>
+        		<ref bean="item11"/>
+        		<ref bean="item12"/>
+        	</list>
+        </property>
+	</bean>  	  
+    <bean id="item1" class="Item"> 
+    	<property name="itemno" value="1"/>
+        <property name="name" value="name1"/>
+        <property name="price" value="100.00"/> 
+	</bean>
+	<bean id="item2" class="Item"> 
+    	<property name="itemno" value="2"/>
+        <property name="name" value="name2"/>
+        <property name="price" value="200.00"/> 
+	</bean>
+	<bean id="item3" class="Item"> 
+    	<property name="itemno" value="3"/>
+        <property name="name" value="name1"/>
+        <property name="price" value="300.00"/> 
+	</bean>
+	<bean id="item4" class="Item"> 
+    	<property name="itemno" value="4"/>
+        <property name="name" value="name4"/>
+        <property name="price" value="400.00"/> 
+	</bean>
+	<bean id="item5" class="Item"> 
+    	<property name="itemno" value="5"/>
+        <property name="name" value="name5"/>
+        <property name="price" value="500.00"/> 
+	</bean>
+	<bean id="item6" class="Item"> 
+    	<property name="itemno" value="6"/>
+        <property name="name" value="name6"/>
+        <property name="price" value="600.00"/> 
+	</bean>
+	<bean id="item7" class="Item"> 
+    	<property name="itemno" value="7"/>
+        <property name="name" value="name7"/>
+        <property name="price" value="700.00"/> 
+	</bean>
+	<bean id="item8" class="Item"> 
+    	<property name="itemno" value="8"/>
+        <property name="name" value="name8"/>
+        <property name="price" value="800.00"/> 
+	</bean>
+	<bean id="item9" class="Item"> 
+    	<property name="itemno" value="9"/>
+        <property name="name" value="name9"/>
+        <property name="price" value="900.00"/> 
+	</bean>
+	<bean id="item10" class="Item"> 
+    	<property name="itemno" value="10"/>
+        <property name="name" value="name10"/>
+        <property name="price" value="1000.00"/> 
+	</bean>
+	<bean id="item11" class="Item"> 
+    	<property name="itemno" value="11"/>
+        <property name="name" value="name11"/>
+        <property name="price" value="1100.00"/> 
+	</bean>
+	<bean id="item12" class="Item"> 
+    	<property name="itemno" value="12"/>
+        <property name="name" value="name12"/>
+        <property name="price" value="1200.00"/> 
+	</bean>
+</beans>

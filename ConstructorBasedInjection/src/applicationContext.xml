@@ -1,0 +1,28 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="
+           http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans-3.1.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context-3.1.xsd">
+
+
+	<bean id="categoryName" class="Category">
+		<constructor-arg value="9876543210" />
+		<constructor-arg value="1234567890" />
+		<constructor-arg value="22536458" />
+		<constructor-arg value="me@gmail.com" />
+	</bean>
+	<bean id="description" class="Category">
+		<constructor-arg value="9876543210" />
+		<constructor-arg value="1234567890" />
+		<constructor-arg value="22536458" />
+	</bean>
+	<bean id="itemList" class="Item">
+		<list>
+			<ref bean="itemno" />
+		</list>
+	</bean>
+</beans>
+
